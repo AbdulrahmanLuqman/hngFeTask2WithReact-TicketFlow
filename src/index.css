@@ -59,71 +59,72 @@
   --radius: 0.625rem;
 
   /* 🌅 BACKGROUNDS & TEXT */
-  --background: oklch(0.96 0.03 25); /* Soft pale red background */
-  --foreground: oklch(0.18 0.05 25); /* Deep red text */
+  --background: oklch(0.98 0 0); /* almost white background */
+  --foreground: oklch(0.1 0 0); /* near black text */
 
   /* 🧾 CARDS & SURFACES */
-  --card: oklch(0.94 0.04 25); /* Card background */
-  --card-foreground: oklch(0.22 0.05 25);
+  --card: oklch(0.96 0 0); /* light gray card */
+  --card-foreground: oklch(0.15 0 0); /* dark gray text */
 
   /* 💬 POPOVERS, MODALS */
-  --popover: oklch(0.94 0.04 25);
-  --popover-foreground: oklch(0.22 0.05 25);
+  --popover: oklch(0.96 0 0);
+  --popover-foreground: oklch(0.15 0 0);
 
   /* 🎨 PRIMARY (Buttons, CTA) */
-  --primary: oklch(0.65 0.23 25); /* Main red for buttons */
-  --primary-foreground: oklch(0.99 0.01 95); /* White text on red */
+  --primary: oklch(0.2 0 0); /* pure black button */
+  --primary-foreground: oklch(0.98 0 0); /* white text */
 
   /* ⚙️ SECONDARY (Tabs, subtle elements) */
-  --secondary: oklch(0.83 0.06 25); /* Light red tint */
-  --secondary-foreground: oklch(0.22 0.05 25);
+  --secondary: oklch(0.85 0 0); /* light gray tint */
+  --secondary-foreground: oklch(0.15 0 0);
 
   /* 💤 MUTED (Disabled or subtle UI) */
-  --muted: oklch(0.9 0.02 25); /* Muted red-gray */
-  --muted-foreground: oklch(0.45 0.03 25);
+  --muted: oklch(0.9 0 0); /* muted light gray */
+  --muted-foreground: oklch(0.4 0 0); /* medium gray text */
 
   /* ✨ ACCENT (Hover, badges) */
-  --accent: oklch(0.72 0.18 25); /* Vibrant red accent */
-  --accent-foreground: oklch(0.99 0.01 95);
+  --accent: oklch(0.75 0 0); /* medium gray accent */
+  --accent-foreground: oklch(0.1 0 0); /* black text */
 
   /* 💥 DESTRUCTIVE (Same tone but deeper) */
-  --destructive: oklch(0.58 0.25 25); /* Dark red */
-  --destructive-foreground: oklch(0.98 0.01 95);
+  --destructive: oklch(0.25 0 0); /* dark gray */
+  --destructive-foreground: oklch(0.98 0 0); /* white text */
 
   /* 📦 BORDERS & INPUTS */
-  --border: oklch(0.88 0.03 25); /* Soft red border */
-  --input: oklch(0.9 0.03 25); /* Input background/border */
-  --ring: oklch(0.65 0.23 25); /* Red focus ring */
+  --border: oklch(0.88 0 0); /* subtle gray border */
+  --input: oklch(0.93 0 0); /* input background/border */
+  --ring: oklch(0.2 0 0); /* black focus ring */
 
   /* 📊 CHART COLORS */
-  --chart-1: oklch(0.65 0.23 25);
-  --chart-2: oklch(0.5 0.15 25);
-  --chart-3: oklch(0.75 0.18 25);
-  --chart-4: oklch(0.55 0.15 25);
-  --chart-5: oklch(0.7 0.14 25);
+  --chart-1: oklch(0.2 0 0);
+  --chart-2: oklch(0.4 0 0);
+  --chart-3: oklch(0.6 0 0);
+  --chart-4: oklch(0.75 0 0);
+  --chart-5: oklch(0.9 0 0);
 
   /* 🧭 SIDEBAR */
-  --sidebar: oklch(0.95 0.03 25);
-  --sidebar-foreground: oklch(0.22 0.05 25);
-  --sidebar-primary: oklch(0.65 0.23 25);
-  --sidebar-primary-foreground: oklch(0.99 0.01 95);
-  --sidebar-accent: oklch(0.83 0.05 25);
-  --sidebar-accent-foreground: oklch(0.22 0.05 25);
-  --sidebar-border: oklch(0.88 0.03 25);
-  --sidebar-ring: oklch(0.65 0.23 25);
+  --sidebar: oklch(0.97 0 0);
+  --sidebar-foreground: oklch(0.1 0 0);
+  --sidebar-primary: oklch(0.15 0 0);
+  --sidebar-primary-foreground: oklch(0.98 0 0);
+  --sidebar-accent: oklch(0.85 0 0);
+  --sidebar-accent-foreground: oklch(0.1 0 0);
+  --sidebar-border: oklch(0.88 0 0);
+  --sidebar-ring: oklch(0.15 0 0);
 
   /* ✅ SUCCESS STATES */
-  --success: oklch(0.78 0.18 145);
-  --success-foreground: oklch(0.15 0 0);
+  --success: oklch(0.8 0 145); /* soft green-gray tint */
+  --success-foreground: oklch(0.1 0 0);
 
   /* 🕒 IN-PROGRESS STATES */
-  --inprogress: oklch(0.78 0.12 80);
-  --inprogress-foreground: oklch(0.15 0 0);
+  --inprogress: oklch(0.75 0 80); /* light neutral blue-gray */
+  --inprogress-foreground: oklch(0.1 0 0);
 
   /* ❌ ERROR STATES */
-  --error: oklch(0.65 0.25 25);
-  --error-foreground: oklch(0.98 0.01 95);
+  --error: oklch(0.3 0 25); /* deep grayish red */
+  --error-foreground: oklch(0.98 0 0); /* white */
 }
+
 
 /* === BASE LAYER === */
 @layer base {

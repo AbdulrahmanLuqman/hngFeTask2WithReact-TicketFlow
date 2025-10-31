@@ -4,9 +4,7 @@ import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import {
   Card,
-  CardAction,
   CardContent,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
@@ -15,7 +13,7 @@ const LandingPage = () => {
     const navigate = useNavigate()
   return (
     <div>
-              <div className="relative overflow-hidden bg-background">
+      <div className="relative overflow-hidden bg-background">
         <div className="absolute top-20 right-10 w-64 h-64 bg-foreground rounded-full opacity-20 blur-3xl" />
         <div className="absolute bottom-32 left-10 w-96 h-96 bg-foreground rounded-full opacity-10 blur-3xl" />
 
@@ -30,7 +28,7 @@ const LandingPage = () => {
               <p className="text-xl sm:text-2xl text-slate-600 mb-8 max-w-3xl mx-auto">
                 Streamline your support workflow with powerful ticket management that keeps your team organized and customers satisfied.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center mx-auto w-fit">
                 <Button asChild variant={"default"} className={cn("cursor-pointer py-7 text-lg font-semibold w-[150px]")}>
                   <Link to="/auth/signup">Get Started</Link>
                 </Button>
@@ -58,38 +56,38 @@ const LandingPage = () => {
               Why Choose TicketFlow?
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
-              <Card className="">
-                <CardHeader className="w-16 h-16 bg-card-foreground rounded-full flex items-center justify-center mb-6">
+              <Card className='items-center'>
+                <CardHeader className="w-16 h-16 bg-card-foreground rounded-full flex items-center justify-center">
                   <CheckCircle className="text-white" size={32} />
                 </CardHeader>
-                <CardTitle className="">
+                <CardTitle>
                   Simple & Intuitive
                 </CardTitle>
-                <CardContent className="">
+                <CardContent className="text-center">
                   Get started in minutes with our clean, user-friendly interface designed for teams of all sizes.
                 </CardContent>
               </Card>
 
-              <Card className="">
-                <CardHeader className="w-16 h-16 bg-card-foreground rounded-full flex items-center justify-center mb-6">
+              <Card className="items-center">
+                <CardHeader className="w-16 h-16 bg-card-foreground rounded-full flex items-center justify-center">
                   <Zap className="text-white" size={32} />
                 </CardHeader>
-                <CardTitle className="">
+                <CardTitle>
                   Lightning Fast
                 </CardTitle>
-                <CardContent className="">
+                <CardContent className="text-center">
                   Get started in minutes with our clean, user-friendly interface designed for teams of all sizes.
                 </CardContent>
               </Card>
 
-              <Card className="">
-                <CardHeader className="w-16 h-16 bg-card-foreground rounded-full flex items-center justify-center mb-6">
+              <Card className="items-center">
+                <CardHeader className="w-16 h-16 bg-card-foreground rounded-full flex items-center justify-center">
                   <Shield className="text-white" size={32} />
                 </CardHeader>
-                <CardTitle className="">
+                <CardTitle>
                   Secure & Reliable
                 </CardTitle>
-                <CardContent className="">
+                <CardContent className="text-center">
                   Your data is protected with enterprise-grade security and automatic backups.
                 </CardContent>
               </Card>
@@ -108,17 +106,27 @@ const LandingPage = () => {
                 <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
                   Join thousands of teams already using TicketFlow to deliver exceptional customer experiences.
                 </p>
-                <button
+                <Button
                   onClick={() => navigate('/auth/signup')}
-                  className="px-8 py-4 bg-white text-blue-600 rounded-lg font-semibold text-lg hover:bg-blue-50 transition-colors shadow-lg hover:shadow-xl"
+                  className={cn("cursor-pointer px-8 py-7 bg-primary text-primary-foreground rounded-lg font-semibold text-lg hover:bg-accent transition-colors shadow-lg hover:shadow-xl")}
                 >
                   Start Free Trial
-                </button>
+                </Button>
               </div>
             </div>
           </section>
         </div>
       </div>
+      <footer className="bg-foreground text-white py-8 mt-auto">
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <p className="text-sm text-slate-400">
+              © 2025 TicketFlow. All rights reserved.
+              built with ❤️ by CodeKage || Code-O || Xenon
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>
   )
 }
